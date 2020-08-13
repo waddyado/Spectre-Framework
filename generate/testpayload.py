@@ -2,7 +2,7 @@ import socket
 import os
 import subprocess
 client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-client.connect(('192.168.1.244', 8080))
+client.connect(('192.168.1.243', 8080))
 def recieve():
     while True:
             message = client.recv(1024)

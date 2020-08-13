@@ -17,7 +17,6 @@ def initScanner():
     from scanner.scanner import main
     main()
 
-    
 def main():
     print('   _____                     __                 ______                                                     __  ')
     print('  / ___/ ____   ___   _____ / /_ _____ ___     / ____/_____ ____ _ ____ ___   ___  _      __ ____   _____ / /__')
@@ -28,6 +27,21 @@ def main():
     print('                           The All in One Pentesting Framework                                                 ')
     print('                                                                                                               ')
     print('type "help" for a list of commands')
+
+    if len(sys.argv) > 1:
+        args = sys.argv[1:]
+        if "help" in args:
+            print('Type "generate" to generate customized payloads')
+            print('Type "listener" to select from a variety of listeners')
+            print('Type "scanner" to select from a variety of vulnerability scanners')
+            print('Type "exit" to exit (never coulda guessed that one)')
+        elif "listener" in args:
+            initListener()
+        elif 'generate' in args:
+            initGenerate()
+        elif 'scanner' in args:
+            initScanner()
+            
     inp = input(':>')
     if inp == 'help':
         print('Type "generate" to generate customized payloads')
@@ -39,6 +53,9 @@ def main():
         helpinp = input('')
         os.system('cls')
         main()
+        
+    
+            
     if inp == 'generate':
         initGenerate()
     elif inp == 'listener':
@@ -57,4 +74,6 @@ def main():
         time.sleep(1)
         os.system('cls')
         main()
-main()
+
+if __name__=='__main__':
+    main()
