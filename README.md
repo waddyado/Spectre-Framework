@@ -1,8 +1,6 @@
 # Spectre-Framework
 The all in one pentesting framework
 
-Update 6/23/2020:
-finished listener
-working on exploits and script generation
-
+Update 8/13/2020:
+added basic payload generation, and args
 to come: vulnerability scanner, a ton of new exploits
