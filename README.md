@@ -11,7 +11,7 @@ Instructions:
 install required dependencies from requirements.txt and launch with python 3.7
 
 possible args:
-help
-generate
-listener
+help,
+generate,
+listener,
 scanner
