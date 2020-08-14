@@ -8,7 +8,7 @@ to come: vulnerability scanner, a ton of new exploits
 
 
 Instructions:
-install required dependencies from requirements.txt
+install required dependencies from requirements.txt and launch with python 3.7
 
 possible args:
 help
