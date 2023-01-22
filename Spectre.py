@@ -2,7 +2,7 @@ import os
 import sys
 import colorama
 import time
-#i dont write comments unless i have to sorry :(
+
 sys.path.append('/generate/generate.py')
 sys.path.append('/listener/listener.py')
 sys.path.append('/scanner/scanner.py')
